@@ -1,0 +1,12 @@
+CREATE SCHEMA IF NOT EXISTS curso;
+
+-- CREATE SEQUENCE IF NOT EXISTS curso.departamento_codigo_seq;
+-- AUTO INCREMENT NO MYSQL, no POSTGRE SERIAL ou GENERATED ... AS IDENTITY
+
+CREATE TABLE IF NOT EXISTS curso.estado(
+    id SERIAL NOT NULL,
+    nome VARCHAR(50),
+    sigla VARCHAR(2),
+
+    CONSTRAINT estado_pk PRIMARY KEY (id)
+);
